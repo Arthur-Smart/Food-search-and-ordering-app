@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Order a meal</title>
+</head>
+<body>
+    <section class="home">
+        <!---Navigation-->
+        <div class="navigation">
+            <div class="left-nav">
+                <div class="logo">
+                    <a href="#!">SHERRIF</a>
+                </div>
+            </div>
+            <div class="hotel-title">
+                <h6>Sherrif's Hotel.  <span>Welcome.</span></h6>
+                <div class="animate-title"></div>
+            </div>
+            <div class="right-nav">
+            <a href="#">
+               <button id="show-menu">Menu List</button>
+            </a>
+            <div class="cart">
+                <i class="material-icons">local_grocery_store</i>
+                <span id="number">0</span>
+            </div>
+            </div>
+        </div>
+        
+        <!--End of navigation-->
+        <!--Body--------------->
+        <div class="container">
+          <div class="meal-wrapper">
+              <div class="meal-search">
+                  <h6>Search a meal to order</h6>
+                  <div class="search-box">
+                      <input type="text" class="search-field" placeholder="Place an order...">
+                      <button type="submit" class="search-btn btn" id="search-btn">
+                          <i class="fas fa-search"></i>
+                      </button>
+                  </div>
+              </div>
+              <div class="meal-result">
+                  <h2>Results for your order</h2>
+                  
+                  <div id="meal">
+                      <!--Single meal-->
+                      <div class="meal-item">
+                         <!--- <div class="meal-img">
+                              <img src="./images/one.jpeg" alt="">
+                          </div>
+                          <div class="meal-name">
+                              <h3>Eggs salad</h3>
+                              <div class="buttons">
+                              <a href="#" class="recipe-btn">Our Recipe</a>
+                              <a href="#" class="recipe-btn">Order</a>
+                            </div>
+                          </div>
+                      </div>-->
+                      <!--End of single meal-->
+                  </div>
+              </div>
+              <div class="meal-info">
+                  <button class="btn infor-close-btn" id="close-btn">
+                      <i class="fas fa-times"></i>
+                  </button>
+                  <div class="meal-details-content">
+                    <!--  <h2 class="recipe-title">Enter name here</h2>
+                      <p class="recipe-category">Category name</p>
+                      <div class="recipe-instruction">
+                          <h3>Procedure</h3>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius dolores dignissimos placeat facilis laboriosam explicabo id distinctio libero accusamus fuga. Asperiores nam expedita sed nostrum nisi ipsum iusto recusandae ducimus.</p>
+                      </div>
+                      <div class="recipe-meal-img">
+                          <img src="./images/one.jpeg" alt="">
+                      </div>-->
+                  </div>
+              </div>
+          </div>            
+        </div>
+        <div class="menu">
+            <div class="menu-items">
+                <i class="fas fa-times" id="close-menu"></i>
+                <ul class="items">
+                    <li class="item">Chicken</li>
+                    <li class="item">Beef</li>
+                    <li class="item">Banana</li>
+                    <li class="item">Rice</li>
+                    <li class="item">Potatoes</li>
+                    <li class="item">Lemon</li>
+                </ul>
+                <h5>Search to get more meals.</h5>
+            </div>
+            
+        </div>
+    </section>
+    <script src="script/materialize.min.js"></script>
+    <!--Custome javascript-->
+    <script src="script/script.js"></script>
+    <script src="script/jquery-3.5.1.min.js"></script>
+</body>
+</html>
